@@ -24,6 +24,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Set an alternative OrderForm class for the checkout process.
 # SHOP_CHECKOUT_FORM_CLASS = 'cartridge.shop.forms.OrderForm'
+SHOP_CHECKOUT_FORM_CLASS = 'culqi_sample.forms.OrderForm'
 
 # If True, the checkout process is split into separate
 # billing/shipping and payment steps.
@@ -313,6 +314,9 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
+
+    "culqi_sample",
+
     "mezzanine.boot",
     "mezzanine.conf",
     "mezzanine.core",
